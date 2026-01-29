@@ -1,75 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== ANIMATION ===== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #0f0f0f;
-  color: #f5f5f5;
-  line-height: 1.7;
-}
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 80px 24px;
-}
-
-.hero {
-  margin-bottom: 80px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 16px;
-}
-
-.subtitle {
-  font-size: 16px;
-  color: #b5b5b5;
-  max-width: 520px;
-}
-
-.section {
-  margin-bottom: 64px;
-}
-
-.section h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-
-.section p {
-  max-width: 700px;
-  color: #d0d0d0;
-}
-
-.list {
-  list-style: none;
-}
-
-.list li {
-  margin-bottom: 20px;
-  color: #e0e0e0;
-}
-
-.list span {
-  font-size: 14px;
-  color: #9a9a9a;
-}
-
-.cta {
-  margin-top: 80px;
-  padding-top: 24px;
-  border-top: 1px solid #2a2a2a;
-  font-size: 14px;
-  color: #9f9f9f;
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
